@@ -14,7 +14,7 @@ function parseList(value) {
 
 function parseArgs(argv) {
   const args = {
-    language: "en",
+    language: "zh",
     projectFormats: [],
     domains: [],
     curationStyle: "balanced",

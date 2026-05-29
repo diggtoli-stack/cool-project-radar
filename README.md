@@ -30,13 +30,13 @@ It is not a generic news reader. It is meant to surface projects with product ta
 Set up Cool Project Radar.
 ```
 
-3. The agent will ask you three questions:
+3. The agent will show three groups of selectable options:
 
-- What kinds of projects do you want to see?
-- What scenarios or domains do you care about?
-- What curation style do you prefer?
+- Project types: apps, web products, browser extensions, AI tools, open-source tools, hardware, games, creator/design tools
+- Domains: productivity, writing/research, design/images, social/community, family/travel, health/habits, education, developer workflow, consumer hardware
+- Curation style: innovation, popular, practical, weird, or balanced
 
-Example answers:
+Recommended reply format:
 
 ```text
 Formats: web apps, browser extensions, AI tools

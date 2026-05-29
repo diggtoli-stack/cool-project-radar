@@ -13,23 +13,19 @@ This is a public, configurable skill. Do not hard-code another user's personal t
 
 Use `~/.cool-project-radar/config.json` as the user's local radar profile.
 
-If the config file is missing, ask at most three questions before running a digest:
+If the config file is missing, read `references/onboarding.md` and ask the onboarding questions in Chinese by default. Use English only when the user explicitly asks for English or the surrounding conversation is clearly English.
 
-1. What kinds of projects do you want to see?
-2. What scenarios or domains do you care about?
-3. What curation style should the radar use: `innovation`, `popular`, `practical`, `weird`, or `balanced`?
-
-Read `references/onboarding.md` when creating or changing the profile. After the user answers, write the config directly or run:
+Ask with clear selectable options, not loose examples. The user should be able to reply with option letters/numbers or short labels. After the user answers, write the config directly or run:
 
 ```bash
 node scripts/init-config.js \
-  --language en \
+  --language zh \
   --formats "web apps,browser extensions,AI tools" \
   --domains "productivity,creator tools,design" \
   --style innovation
 ```
 
-Infer `language` from the user's conversation language unless they specify otherwise.
+After setup, explicitly tell the user the configuration is complete and show 3-5 natural-language commands they can use next.
 
 ## Run The Radar
 

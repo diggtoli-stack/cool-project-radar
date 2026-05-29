@@ -27,21 +27,47 @@ Cool Project Radar 可以帮你发现：
 2. 对 agent 说：
 
 ```text
-Set up Cool Project Radar.
+配置 Cool Project Radar。
 ```
 
-3. 它会问你 3 个问题：
-
-- 你想看哪类项目？
-- 你关心哪些场景或领域？
-- 你偏好哪种筛选风格？
-
-比如你可以这样回答：
+3. 它会给你 3 组选项。前两题可多选，第三题单选：
 
 ```text
-类型：web apps, browser extensions, AI tools
-领域：creator tools, writing, research, design
-风格：innovation
+1. 你想看哪类项目？（可多选）
+A. App / 移动应用
+B. Web / 网页产品
+C. 浏览器插件
+D. AI 工具 / Agent 工作流
+E. 开源工具 / 开发者工具
+F. 硬件 / 可穿戴 / 智能设备
+G. 游戏 / 互动玩具
+H. 创作者工具 / 设计工具
+
+2. 你关心哪些场景或领域？（可多选）
+A. 效率 / 自动化
+B. 写作 / 研究 / 知识管理
+C. 设计 / 图片 / 审美
+D. 社交 / 社区 / 协作
+E. 家庭 / 旅行 / 生活方式
+F. 健康 / 自控 / 习惯
+G. 教育 / 学习
+H. 开发者工作流
+I. 消费硬件 / 智能家居
+
+3. 你偏好的筛选风格？（单选）
+A. 创新优先
+B. 热门优先
+C. 实用优先
+D. 奇怪有趣优先
+E. 平衡
+```
+
+推荐回复格式：
+
+```text
+类型：B、C、D、H
+领域：A、B、C
+风格：A
 ```
 
 设置完以后，之后可以随时说：
@@ -56,7 +82,7 @@ Run my project radar for the last 24 hours.
 
 你不需要每次都改配置文件。直接告诉 agent 这次想找什么就行。
 
-比如：
+你可以这样说：
 
 ```text
 Find weird browser extensions from the past week.
