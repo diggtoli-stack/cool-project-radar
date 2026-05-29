@@ -1,0 +1,22 @@
+{
+  "language": "en",
+  "projectFormats": [
+    "web apps",
+    "browser extensions",
+    "AI tools"
+  ],
+  "domains": [
+    "productivity",
+    "creator tools",
+    "design"
+  ],
+  "curationStyle": "innovation",
+  "lookbackHours": 72,
+  "maxCandidates": 36,
+  "focusKeywords": [
+    "local-first",
+    "privacy"
+  ],
+  "blockedDomains": [],
+  "sourceOptions": {}
+}

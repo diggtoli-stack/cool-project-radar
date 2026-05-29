@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "User configuration for Cool Project Radar. Store at ~/.cool-project-radar/config.json.",
+  "type": "object",
+  "properties": {
+    "language": {
+      "type": "string",
+      "enum": ["zh", "en", "bilingual"],
+      "default": "en"
+    },
+    "lookbackHours": {
+      "type": "number",
+      "default": 72,
+      "minimum": 1,
+      "maximum": 336
+    },
+    "maxCandidates": {
+      "type": "number",
+      "default": 36,
+      "minimum": 1,
+      "maximum": 100
+    },
+    "projectFormats": {
+      "type": "array",
+      "description": "Project formats the user wants to see, such as mobile apps, web apps, browser extensions, hardware, games, AI workflows, open-source tools, or creator tools.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "domains": {
+      "type": "array",
+      "description": "Scenarios or domains the user cares about, such as productivity, creators, social, family, travel, health, education, design, games, developer tools, or consumer hardware.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "curationStyle": {
+      "type": "string",
+      "description": "How to rank tradeoffs when selecting projects.",
+      "enum": ["innovation", "popular", "practical", "weird", "balanced"],
+      "default": "balanced"
+    },
+    "focusKeywords": {
+      "type": "array",
+      "description": "Extra keywords to boost beyond projectFormats/domains/curationStyle.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "blockedDomains": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "enabledSources": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional list of source ids to run. If omitted, all enabled default sources run."
+    },
+    "sourceOptions": {
+      "type": "object",
+      "description": "Per-source overrides. Useful for optional sources such as xiaoyuzhou_podcasts, twitterapi_io_search, and wewe_rss.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "default": {}
+    }
+  }
+}

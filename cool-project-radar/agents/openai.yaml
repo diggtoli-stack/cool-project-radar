@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cool Project Radar"
+  short_description: "Discover and curate new projects based on your interests."
+  default_prompt: "Find fresh projects, apps, tools, extensions, hardware, or playful products that match my interests, then write a concise digest with sources."
